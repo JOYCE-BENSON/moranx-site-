@@ -140,6 +140,9 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .svc-ico{width:52px;height:52px;border:1px solid rgba(201,168,76,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .svc-ttl{font-family:var(--font-display);font-size:26px;letter-spacing:1px;color:#fff;}
 .svc-desc{font-size:13px;color:rgba(255,255,255,.35);line-height:1.85;max-width:46ch;}
+.svc-list{margin-top:2px;display:flex;flex-direction:column;gap:9px;}
+.svc-list li{font-size:12.5px;color:rgba(255,255,255,.4);line-height:1.6;padding-left:16px;position:relative;}
+.svc-list li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--gold3);}
 .svc-note{margin-top:40px;font-size:12px;color:rgba(255,255,255,.28);font-style:italic;font-family:var(--font-serif);max-width:60ch;}
 
 /* TRACK RECORD */
@@ -314,8 +317,18 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
       <div class="ey"><div class="eyl"></div><span class="eyt">Who We Are</span></div>
       <h2 class="stitle">A YOUNG FIRM,<br>BUILT THE <span class="g">RIGHT</span> WAY ROUND</h2>
       <p class="about-body" style="margin-top:24px;">Moranx Construction Limited was established as a road works contracting firm serving Narok County and beyond. We're a new company — and we secured our <strong>National Construction Authority registration and practising licence before taking on work</strong>, rather than the other way around.</p>
-      <p class="about-body">That means every quotation, every site visit, and every conversation with us starts from a verifiable position: a real registration number, a real category, and a real person with engineering qualifications behind the work. We're not the biggest contractor in the room. We intend to be the most straightforward one to work with.</p>
+      <p class="about-body">That means every quotation, every site visit, and every conversation with us starts from a verifiable position: a real registration number, a real category, and a real person with engineering qualifications behind the work.</p>
+      <p class="about-body">Moranx is also a <strong>family business, founded by a father and son</strong>. <strong>Geoffrey Leitato Totona</strong>, our Managing Director, is a qualified civil engineer who leads technical delivery and site supervision on every project we take on. His father, <strong>Kiplagat Kimaiywa Totona</strong>, serves as Director and shareholder, bringing three decades of business experience to how the company is run. Between them, hands-on engineering discipline meets long-standing business judgment — and a shared name on the door means a shared stake in getting every job right.</p>
+      <p class="about-body">We're not the biggest contractor in the room. We intend to be the most straightforward one to work with.</p>
     </div>
+  </div>
+</section>
+
+<!-- FAMILY BUSINESS -->
+<section class="section alt" id="family">
+  <div class="wrap">
+    <div class="ey" style="justify-content:center;"><span class="eyt">A Family Business, Built To Last</span></div>
+    <h2 class="stitle" style="text-align:center;">FATHER AND SON —<br>ONE <span class="g">COMPANY</span>, ONE NAME</h2>
   </div>
 </section>
 
@@ -348,6 +361,45 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
   </div>
 </section>
 
+<!-- OUR APPROACH -->
+<section class="section alt" id="approach">
+  <div class="wrap">
+    <div class="ey"><div class="eyl"></div><span class="eyt">How We Work</span></div>
+    <h2 class="stitle">OUR <span class="g">APPROACH</span></h2>
+    <p class="section-sub">Four things we hold ourselves to on every project, regardless of size.</p>
+    <div class="svc-full rev" style="margin-top:44px;">
+      <div class="svc">
+        <div class="svc-top">
+          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#C9A84C" stroke-width="1.6"/><circle cx="12" cy="12" r="9" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
+          <div class="svc-ttl">COMPLIANCE FIRST</div>
+        </div>
+        <div class="svc-desc">We secured our NCA registration and practising licence before taking on any work — not after. Every job starts from a position you can verify.</div>
+      </div>
+      <div class="svc">
+        <div class="svc-top">
+          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20l6-14 4 8 3-5 3 11" stroke="#C9A84C" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg></div>
+          <div class="svc-ttl">ENGINEERING-LED EXECUTION</div>
+        </div>
+        <div class="svc-desc">Our Managing Director, a qualified civil engineer, personally supervises site work — not a name on a certificate, an active presence on the ground.</div>
+      </div>
+      <div class="svc">
+        <div class="svc-top">
+          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
+          <div class="svc-ttl">TRANSPARENT COMMUNICATION</div>
+        </div>
+        <div class="svc-desc">Clear scopes, honest timelines, and regular site updates — you always know exactly where a project stands.</div>
+      </div>
+      <div class="svc">
+        <div class="svc-top">
+          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v6M12 21v-6M4 12h6M14 12h6" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
+          <div class="svc-ttl">QUALITY & SAFETY CONTROL</div>
+        </div>
+        <div class="svc-desc">Work is checked against specification and safety standards at every stage, not just at handover.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
 <section class="section" id="services">
   <div class="wrap">
@@ -360,42 +412,72 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
           <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M2 18Q7 10 12 13Q17 16 22 8" stroke="#C9A84C" stroke-width="1.4" fill="none"/><line x1="2" y1="21" x2="22" y2="21" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
           <div class="svc-ttl">ROAD CONSTRUCTION & GRADING</div>
         </div>
-        <div class="svc-desc">Construction and grading of murram and gravel roads, including formation and compaction.</div>
+        <ul class="svc-list">
+          <li>Construction of murram and gravel roads</li>
+          <li>Grading, formation and compaction</li>
+          <li>Access road development for rural and urban sites</li>
+          <li>Site preparation and road alignment</li>
+        </ul>
       </div>
       <div class="svc">
         <div class="svc-top">
           <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 12l4-4M3 12l4 4" stroke="#C9A84C" stroke-width="1.4" fill="none"/></svg></div>
           <div class="svc-ttl">MAINTENANCE & REHABILITATION</div>
         </div>
-        <div class="svc-desc">Routine and periodic maintenance to keep existing road surfaces safe and passable.</div>
+        <ul class="svc-list">
+          <li>Routine road maintenance</li>
+          <li>Periodic rehabilitation of worn surfaces</li>
+          <li>Pothole patching and resurfacing</li>
+          <li>Scheduled inspection and upkeep</li>
+        </ul>
       </div>
       <div class="svc">
         <div class="svc-top">
           <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C9A84C" stroke-width="1.4"/><path d="M8 12h8M12 8v8" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
           <div class="svc-ttl">DRAINAGE & CULVERT WORKS</div>
         </div>
-        <div class="svc-desc">Installation of drainage structures and culverts to protect road works from water damage.</div>
+        <ul class="svc-list">
+          <li>Design and installation of road drainage systems</li>
+          <li>Culvert construction and installation</li>
+          <li>Erosion control measures</li>
+          <li>Stormwater management along road corridors</li>
+        </ul>
       </div>
       <div class="svc">
         <div class="svc-top">
           <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
           <div class="svc-ttl">EARTHWORKS & SITE CLEARANCE</div>
         </div>
-        <div class="svc-desc">Clearance, cut-and-fill, and earthworks preparation ahead of road construction.</div>
-      </div>
-      <div class="svc">
-        <div class="svc-top">
-          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20l6-14 4 8 3-5 3 11" stroke="#C9A84C" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg></div>
-          <div class="svc-ttl">MATERIALS & SUPPLIES</div>
-        </div>
-        <div class="svc-desc">Sourcing and delivery of goods and materials, drawing on our public procurement track record.</div>
+        <ul class="svc-list">
+          <li>Site clearance and vegetation removal</li>
+          <li>Cut-and-fill earthworks</li>
+          <li>Excavation and grading</li>
+          <li>Land preparation ahead of road works</li>
+        </ul>
       </div>
       <div class="svc">
         <div class="svc-top">
           <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v6M12 21v-6M4 12h6M14 12h6" stroke="#C9A84C" stroke-width="1.4"/></svg></div>
           <div class="svc-ttl">PROJECT SUPERVISION</div>
         </div>
-        <div class="svc-desc">On-site supervision led by our Managing Director, a qualified civil engineer.</div>
+        <ul class="svc-list">
+          <li>On-site supervision led by a qualified civil engineer</li>
+          <li>Quality control and compliance monitoring</li>
+          <li>Progress reporting and documentation</li>
+          <li>Coordination with subcontractors and suppliers</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <div class="svc-top">
+          <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 20l6-14 4 8 3-5 3 11" stroke="#C9A84C" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg></div>
+          <div class="svc-ttl">SUPPLIES & PROCUREMENT</div>
+        </div>
+        <ul class="svc-list">
+          <li>Supply and delivery of general hardware and equipment</li>
+          <li>Electrical fittings and fixtures</li>
+          <li>Plumbing and sanitary supplies</li>
+          <li>Public procurement and tender fulfilment — see our track record below</li>
+        </ul>
       </div>
     </div>
     <p class="svc-note">Service scope is defined by our NCA8 Road Works registration. Get in touch to confirm suitability for your specific project.</p>
@@ -414,7 +496,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
       <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
       <span class="eyt2">Public Procurement Award</span>
       <h3>Kenya Institute of Curriculum Development</h3>
-      <p>Competitively awarded a supply and delivery contract by KICD, a public institution — evidence of our ability to meet the compliance and delivery standards required for government procurement.</p>
+      <p>Competitively awarded a supply and delivery contract by KICD, a public institution, covering general hardware, electrical fittings, and equipment — the same category of goods supply we now offer as part of our services. It's direct evidence of our ability to meet the compliance and delivery standards required for government procurement, from tender submission through to fulfilment.</p>
       <div class="track-meta">
         <div><div class="k">Quotation No.</div><div class="v">KICD/ADM/024/2025-2026</div></div>
         <div><div class="k">Scope</div><div class="v">Supply & Delivery</div></div>
@@ -434,10 +516,12 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
         <div class="lead-role">Managing Director</div>
         <div class="lead-name">Geoffrey Leitato Totona</div>
         <ul class="cred-list">
-          <li>BSc, Civil Engineering</li>
+          <li>BSc, Civil Engineering (Second Class Honours), JKUAT</li>
           <li>Graduate Member, Engineers Board of Kenya (EBK)</li>
           <li>Graduate Member, Institution of Engineers of Kenya (IEK)</li>
-          <li>2 years' experience in the field</li>
+          <li>Site Engineer, Three Sixty Construction Company Limited (current)</li>
+          <li>Former Civil Engineering Intern, Kenya National Highways Authority (KeNHA)</li>
+          <li>Certified in Highway Geometric Design, Structural Analysis & BIM (Roadshub, NTU)</li>
         </ul>
       </div>
       <div class="lead-card">
@@ -445,7 +529,8 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
         <div class="lead-name">Kiplagat Kimaiywa Totona</div>
         <ul class="cred-list">
           <li>BSc, Wildlife Management</li>
-          <li>Leads business strategy and investment</li>
+          <li>CEO, Solai Farmers Center Limited</li>
+          <li>Leads business strategy and investment at Moranx</li>
           <li>30 years' experience in business</li>
         </ul>
       </div>
