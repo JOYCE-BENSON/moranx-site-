@@ -141,6 +141,11 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .section{padding:130px 64px;border-top:1px solid var(--line);}
 .section.alt{background:var(--black2);}
 
+/* PHOTO DIVIDER */
+.img-divider{position:relative;height:340px;background-size:cover;background-position:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.img-divider::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.78), rgba(0,0,0,.5) 40%, rgba(0,0,0,.78));}
+@media (max-width: 860px){.img-divider{height:200px;}}
+
 /* SECTION DOT NAV */
 .dotnav{position:fixed;right:34px;top:50%;transform:translateY(-50%);z-index:500;display:flex;flex-direction:column;gap:22px;}
 .dotnav a{position:relative;width:8px;height:8px;border-radius:50%;border:1px solid rgba(201,168,76,.4);transition:background .3s,transform .3s,border-color .3s;display:block;}
@@ -338,9 +343,9 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
   <div class="hsl"></div>
   <div class="hc">
     <div class="hbadge"><div class="hbl"></div><span class="hbt">Narok, Kenya · NCA8 Registered</span></div>
-    <h1 class="htitle">ROADS BUILT ON<br><span class="g">VERIFIED</span> <span class="o">GROUND</span></h1>
+    <h1 class="htitle">ROAD WORKS & SUPPLIES —<br>ON <span class="g">VERIFIED</span> <span class="o">GROUND</span></h1>
     <div class="hdiv"></div>
-    <p class="hsub">Moranx Construction Limited is a Road Works Contractor registered with the National Construction Authority — compliance first, from the day we opened our doors.</p>
+    <p class="hsub">Moranx Construction Limited is an NCA8 registered Road Works Contractor, offering road works and supplies — compliance first, from the day we opened our doors.</p>
     <div class="hact">
       <a href="#contact" class="btn-g"><span>Request a Quote</span><svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
       <a href="#compliance" class="btn-o">View Our Registration</a>
@@ -386,6 +391,8 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
     </div>
   </div>
 </section>
+
+<div class="img-divider" style="background-image:url('https://images.unsplash.com/photo-1741980574181-1078f075dba1?fm=jpg&amp;q=80&amp;w=2000&amp;auto=format&amp;fit=crop');" role="img" aria-label="Gravel road texture"></div>
 
 <!-- COMPLIANCE / CERTIFICATE -->
 <section class="section alt" id="compliance">
@@ -459,7 +466,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 <section class="section alt" id="services">
   <div class="wrap">
     <div class="ey"><div class="eyl"></div><span class="eyt">What We Do</span></div>
-    <h2 class="stitle">ROAD WORKS, WITHIN<br>OUR <span class="g">REGISTERED SCOPE</span></h2>
+    <h2 class="stitle">OUR SERVICES, WITHIN<br>OUR <span class="g">REGISTERED SCOPE</span></h2>
     <p class="section-sub">Service areas covered under our NCA8 Road Works registration.</p>
     <div class="svc-full rev">
       <div class="svc">
@@ -538,6 +545,8 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
     <p class="svc-note">Service scope is defined by our NCA8 Road Works registration. Get in touch to confirm suitability for your specific project.</p>
   </div>
 </section>
+
+<div class="img-divider" style="background-image:url('https://images.unsplash.com/photo-1600637468460-1fa84e8eddea?fm=jpg&amp;q=80&amp;w=2000&amp;auto=format&amp;fit=crop');" role="img" aria-label="Countryside road landscape"></div>
 
 <!-- TRACK RECORD -->
 <section class="section" id="track-record">
@@ -647,11 +656,11 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
   <div class="wrap fg">
     <div>
       <div class="fbn">MORAN<span>X</span></div>
-      <div class="ftag">Roads built on verified ground.</div>
+      <div class="ftag">Built on verified ground.</div>
       <p class="fab">Moranx Construction Limited — an NCA8 registered Road Works Contractor based in Narok, Kenya.</p>
     </div>
     <div><div class="fct">Navigate</div><div class="fl"><a href="#about">About</a><a href="#compliance">Registration</a><a href="#services">Services</a><a href="#contact">Contact</a></div></div>
-    <div><div class="fct">Services</div><div class="fl"><a href="#services">Road Construction</a><a href="#services">Maintenance</a><a href="#services">Drainage</a></div></div>
+    <div><div class="fct">Services</div><div class="fl"><a href="#services">Road Construction</a><a href="#services">Supplies</a><a href="#services">Maintenance</a><a href="#services">Drainage</a></div></div>
     <div><div class="fct">Contact</div><div class="fl"><a href="tel:+254745422446">0745 422 446</a><a href="mailto:totonageoffrey@gmail.com">totonageoffrey@gmail.com</a><a href="#contact">Narok Town, Kenya</a></div></div>
   </div>
   <div class="wrap fb">
