@@ -108,13 +108,22 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .corner.tr{top:-1px;right:-1px;border-left:none;border-bottom:none;}
 .corner.bl{bottom:-1px;left:-1px;border-right:none;border-top:none;}
 .corner.br{bottom:-1px;right:-1px;border-left:none;border-top:none;}
-.section{padding:130px 64px;}
+.section{padding:130px 64px;border-top:1px solid var(--line);}
 .section.alt{background:var(--black2);}
+
+/* SECTION DOT NAV */
+.dotnav{position:fixed;right:34px;top:50%;transform:translateY(-50%);z-index:500;display:flex;flex-direction:column;gap:22px;}
+.dotnav a{position:relative;width:8px;height:8px;border-radius:50%;border:1px solid rgba(201,168,76,.4);transition:background .3s,transform .3s,border-color .3s;display:block;}
+.dotnav a:hover{border-color:var(--gold2);}
+.dotnav a.active{background:var(--gold);border-color:var(--gold);transform:scale(1.3);}
+.dotnav a .dn-label{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);opacity:0;pointer-events:none;transition:opacity .25s;background:rgba(10,10,10,.9);padding:5px 10px;border:1px solid var(--line);}
+.dotnav a:hover .dn-label, .dotnav a.active .dn-label{opacity:1;}
+@media (max-width: 1080px){.dotnav{display:none;}}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:80px;align-items:center;}
-.about-panel{position:relative;border:1px solid var(--line);background:linear-gradient(160deg, rgba(201,168,76,.08), transparent 60%);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:40px;}
-.about-panel img{max-width:60%;}
+.about-panel{position:relative;border:1px solid var(--line);background:linear-gradient(160deg, rgba(201,168,76,.08), transparent 60%);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:24px;}
+.about-panel img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;}
 .about-body{font-family:var(--font-serif);font-size:19px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:20px;max-width:60ch;}
 .about-body strong{color:#fff;font-weight:600;}
 
@@ -268,10 +277,22 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
   <a href="#contact">Contact</a>
 </div>
 
-<main id="top">
+<main>
+
+<!-- SECTION DOT NAV -->
+<nav class="dotnav" id="dotnav" aria-label="Section navigation">
+  <a href="#top" data-sec="top"><span class="dn-label">Home</span></a>
+  <a href="#about" data-sec="about"><span class="dn-label">About</span></a>
+  <a href="#compliance" data-sec="compliance"><span class="dn-label">Registration</span></a>
+  <a href="#approach" data-sec="approach"><span class="dn-label">Approach</span></a>
+  <a href="#services" data-sec="services"><span class="dn-label">Services</span></a>
+  <a href="#track-record" data-sec="track-record"><span class="dn-label">Track Record</span></a>
+  <a href="#leadership" data-sec="leadership"><span class="dn-label">Leadership</span></a>
+  <a href="#contact" data-sec="contact"><span class="dn-label">Contact</span></a>
+</nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="hsl"></div>
   <div class="hc">
     <div class="hbadge"><div class="hbl"></div><span class="hbt">Narok, Kenya · NCA8 Registered</span></div>
@@ -324,14 +345,6 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
   </div>
 </section>
 
-<!-- FAMILY BUSINESS -->
-<section class="section alt" id="family">
-  <div class="wrap">
-    <div class="ey" style="justify-content:center;"><span class="eyt">A Family Business, Built To Last</span></div>
-    <h2 class="stitle" style="text-align:center;">FATHER AND SON —<br>ONE <span class="g">COMPANY</span>, ONE NAME</h2>
-  </div>
-</section>
-
 <!-- COMPLIANCE / CERTIFICATE -->
 <section class="section alt" id="compliance">
   <div class="wrap">
@@ -362,7 +375,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 </section>
 
 <!-- OUR APPROACH -->
-<section class="section alt" id="approach">
+<section class="section" id="approach">
   <div class="wrap">
     <div class="ey"><div class="eyl"></div><span class="eyt">How We Work</span></div>
     <h2 class="stitle">OUR <span class="g">APPROACH</span></h2>
@@ -401,7 +414,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="services">
+<section class="section alt" id="services">
   <div class="wrap">
     <div class="ey"><div class="eyl"></div><span class="eyt">What We Do</span></div>
     <h2 class="stitle">ROAD WORKS, WITHIN<br>OUR <span class="g">REGISTERED SCOPE</span></h2>
@@ -485,7 +498,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 </section>
 
 <!-- TRACK RECORD -->
-<section class="section alt">
+<section class="section" id="track-record">
   <div class="wrap track-grid">
     <div class="rev">
       <div class="ey"><div class="eyl"></div><span class="eyt">Track Record</span></div>
@@ -507,7 +520,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 </section>
 
 <!-- LEADERSHIP -->
-<section class="section" id="leadership">
+<section class="section alt" id="leadership">
   <div class="wrap">
     <div class="ey"><div class="eyl"></div><span class="eyt">Leadership</span></div>
     <h2 class="stitle">WHO'S BEHIND<br>THE <span class="g">WORK</span></h2>
@@ -552,7 +565,7 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 </div>
 
 <!-- CONTACT -->
-<section class="section alt" id="contact">
+<section class="section" id="contact">
   <div class="wrap contact-grid">
     <div class="rev">
       <div class="ey"><div class="eyl"></div><span class="eyt">Contact Details</span></div>
@@ -621,6 +634,22 @@ if('IntersectionObserver' in window){
   document.querySelectorAll('.rev').forEach(el=>io.observe(el));
 }else{
   document.querySelectorAll('.rev').forEach(el=>el.classList.add('vis'));
+}
+
+// Section dot nav — highlight active section on scroll
+const dotLinks = document.querySelectorAll('.dotnav a');
+const trackedSections = ['top','about','compliance','approach','services','track-record','leadership','contact']
+  .map(id => document.getElementById(id)).filter(Boolean);
+if (dotLinks.length && trackedSections.length){
+  const setActive = (id) => {
+    dotLinks.forEach(a => a.classList.toggle('active', a.dataset.sec === id));
+  };
+  const secObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) setActive(entry.target.id || 'top');
+    });
+  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+  trackedSections.forEach(sec => secObserver.observe(sec));
 }
 
 // Quote request form — submits via Web3Forms (no backend needed)
