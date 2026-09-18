@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Moranx Construction Limited | NCA8 Registered Road Works Contractor</title>
 <meta name="description" content="Moranx Construction Limited — NCA8 registered Road Works Contractor based in Narok, Kenya. Registration no. 99141/R/0226.">
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+<meta property="og:title" content="Moranx Construction Limited | NCA8 Registered Road Works Contractor">
+<meta property="og:description" content="A family-run, NCA8 registered Road Works Contractor based in Narok, Kenya. Registration no. 99141/R/0226.">
+<meta property="og:image" content="https://moranxconstruction.co.ke/logo.jpg">
+<meta property="og:url" content="https://moranxconstruction.co.ke">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -33,7 +40,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--gold2);outline-off
 .stitle{font-family:var(--font-display);font-size:clamp(40px,6vw,84px);letter-spacing:2px;line-height:.92;color:#fff;}
 .stitle .g{color:var(--gold);}
 .stitle .o{-webkit-text-stroke:1px rgba(255,255,255,.18);color:transparent;}
-.section-sub{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:17px;color:rgba(255,255,255,.4);max-width:52ch;margin-top:18px;}
+.section-sub{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:17px;color:rgba(255,255,255,.52);max-width:52ch;margin-top:18px;}
 
 .btn-g{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:#000;padding:17px 38px;font-family:var(--font-body);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;transition:background .3s,transform .2s;position:relative;overflow:hidden;}
 .btn-g::before{content:'';position:absolute;inset:0;background:var(--gold2);transform:translateX(-100%);transition:transform .4s;}
@@ -69,6 +76,8 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .hero{position:relative;width:100vw;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--black);}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 1000px 600px at 78% -5%, rgba(201,168,76,.16), transparent 60%);}
 .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.045) 1px,transparent 1px);background-size:70px 70px;mask-image:radial-gradient(ellipse 900px 700px at 70% 30%, black, transparent 75%);}
+.hero-motif{position:absolute;top:0;right:-8%;width:60%;height:100%;z-index:1;pointer-events:none;}
+@media (max-width: 860px){.hero-motif{display:none;}}
 .hsl{position:absolute;top:0;right:14%;z-index:1;width:1px;height:100%;background:linear-gradient(to bottom,transparent,var(--gold) 40%,var(--gold) 60%,transparent);opacity:.2;}
 .hc{position:relative;z-index:3;padding:0 64px 0;max-width:900px;margin-top:220px;}
 .hbadge{display:flex;align-items:center;gap:12px;margin-bottom:26px;opacity:0;animation:fu 1s ease .3s forwards;}
@@ -78,7 +87,7 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .htitle .g{color:var(--gold);}
 .htitle .o{-webkit-text-stroke:1px rgba(255,255,255,.22);color:transparent;}
 .hdiv{width:60px;height:1px;background:var(--gold);margin:28px 0;opacity:0;animation:fu 1s ease .7s forwards;}
-.hsub{font-family:var(--font-serif);font-size:19px;font-style:italic;font-weight:300;color:rgba(255,255,255,.45);opacity:0;animation:fu 1s ease .8s forwards;max-width:50ch;}
+.hsub{font-family:var(--font-serif);font-size:19px;font-style:italic;font-weight:300;color:rgba(255,255,255,.58);opacity:0;animation:fu 1s ease .8s forwards;max-width:50ch;}
 .hact{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:42px;opacity:0;animation:fu 1s ease 1s forwards;}
 .hscroll{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:fi 1s ease 1.4s forwards;padding:36px 64px 0;align-self:flex-end;}
 .hsl2{width:1px;height:56px;background:linear-gradient(to bottom,var(--gold),transparent);animation:pls 2s ease-in-out infinite;}
@@ -120,11 +129,17 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .dotnav a:hover .dn-label, .dotnav a.active .dn-label{opacity:1;}
 @media (max-width: 1080px){.dotnav{display:none;}}
 
+/* WHATSAPP BUTTON */
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:600;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.4);transition:transform .25s;}
+.wa-btn:hover, .wa-btn:focus-visible{transform:scale(1.08);}
+.wa-btn svg{width:30px;height:30px;}
+@media (max-width: 560px){.wa-btn{width:52px;height:52px;bottom:20px;right:20px;}}
+
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:80px;align-items:center;}
 .about-panel{position:relative;border:1px solid var(--line);background:linear-gradient(160deg, rgba(201,168,76,.08), transparent 60%);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;padding:24px;}
 .about-panel img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;}
-.about-body{font-family:var(--font-serif);font-size:19px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:20px;max-width:60ch;}
+.about-body{font-family:var(--font-serif);font-size:19px;font-weight:300;color:rgba(255,255,255,.62);line-height:1.9;margin-bottom:20px;max-width:60ch;}
 .about-body strong{color:#fff;font-weight:600;}
 
 /* CERTIFICATE */
@@ -148,9 +163,9 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .svc-top{display:flex;align-items:center;gap:20px;}
 .svc-ico{width:52px;height:52px;border:1px solid rgba(201,168,76,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .svc-ttl{font-family:var(--font-display);font-size:26px;letter-spacing:1px;color:#fff;}
-.svc-desc{font-size:13px;color:rgba(255,255,255,.35);line-height:1.85;max-width:46ch;}
+.svc-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.85;max-width:46ch;}
 .svc-list{margin-top:2px;display:flex;flex-direction:column;gap:9px;}
-.svc-list li{font-size:12.5px;color:rgba(255,255,255,.4);line-height:1.6;padding-left:16px;position:relative;}
+.svc-list li{font-size:12.5px;color:rgba(255,255,255,.55);line-height:1.6;padding-left:16px;position:relative;}
 .svc-list li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:1px;background:var(--gold3);}
 .svc-note{margin-top:40px;font-size:12px;color:rgba(255,255,255,.28);font-style:italic;font-family:var(--font-serif);max-width:60ch;}
 
@@ -159,7 +174,7 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .track-card{position:relative;border:1px solid var(--line);padding:44px;background:var(--black3);}
 .track-card .eyt2{font-size:9px;font-weight:700;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:block;}
 .track-card h3{font-family:var(--font-display);font-size:30px;letter-spacing:.5px;color:#fff;margin-bottom:16px;}
-.track-card p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.85;margin-bottom:24px;}
+.track-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:24px;}
 .track-meta{display:flex;gap:34px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--line);}
 .track-meta .k{font-size:8px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,.28);text-transform:uppercase;margin-bottom:6px;}
 .track-meta .v{font-size:12px;color:var(--gold2);letter-spacing:.3px;}
@@ -170,7 +185,7 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .lead-role{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
 .lead-name{font-family:var(--font-display);font-size:32px;letter-spacing:.5px;color:#fff;margin-bottom:20px;}
 .cred-list{display:flex;flex-direction:column;gap:12px;}
-.cred-list li{display:flex;gap:10px;font-size:13px;color:rgba(255,255,255,.45);}
+.cred-list li{display:flex;gap:10px;font-size:13px;color:rgba(255,255,255,.6);}
 .cred-list li::before{content:'—';color:var(--gold3);flex-shrink:0;}
 
 /* CTA */
@@ -192,7 +207,7 @@ nav.mainnav.sc{background:rgba(0,0,0,.95);backdrop-filter:blur(16px);height:72px
 .contact-list .v a:hover,.contact-list .v a:focus-visible{color:var(--gold2);}
 .contact-card{position:relative;border:1px solid var(--line);padding:48px;background:var(--black2);}
 .contact-card h3{font-family:var(--font-display);font-size:28px;letter-spacing:.5px;color:#fff;margin-bottom:16px;}
-.contact-card p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.85;margin-bottom:28px;}
+.contact-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:28px;}
 .map-link{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);border-bottom:1px solid var(--gold3);padding-bottom:3px;margin-top:20px;}
 
 /* CONTACT FORM */
@@ -293,6 +308,11 @@ footer{background:#000;border-top:1px solid var(--line);padding:80px 64px 40px;}
 
 <!-- HERO -->
 <section class="hero" id="top">
+  <svg class="hero-motif" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M50 750 Q 400 650 550 450 T 850 100" stroke="#C9A84C" stroke-width="2" fill="none" opacity="0.12"/>
+    <path d="M-50 550 Q 350 500 500 300 T 900 -100" stroke="#C9A84C" stroke-width="2" fill="none" opacity="0.09"/>
+    <path d="M50 750 Q 400 650 550 450 T 850 100" stroke="#C9A84C" stroke-width="2" stroke-dasharray="4 14" fill="none" opacity="0.2"/>
+  </svg>
   <div class="hsl"></div>
   <div class="hc">
     <div class="hbadge"><div class="hbl"></div><span class="hbt">Narok, Kenya · NCA8 Registered</span></div>
@@ -691,5 +711,9 @@ if(quoteForm){
   });
 }
 </script>
+
+<a href="https://wa.me/254745422446?text=Hi%20Moranx%20Construction%2C%20I%27d%20like%20to%20enquire%20about%20a%20project" class="wa-btn" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 004.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.05 2zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.79-.11-.41-.13-.95-.3-1.63-.6-2.87-1.24-4.74-4.13-4.88-4.32-.14-.19-1.17-1.55-1.17-2.97 0-1.41.74-2.1 1-2.39.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.99.88 2.13.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.07.95 1.96 1.25 2.24 1.39.28.14.44.12.6-.07.16-.19.7-.81.88-1.09.19-.28.37-.23.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
 </body>
 </html>
